@@ -14,16 +14,15 @@ def home():
 
 @app.route('/search', methods=['GET'])
 def submit():
-    query = request.args.get('pokemon_name', '')
+    query = request.args.get('pokemon_name', '').strip().lower().capitalize()
 
     if query:
         print(query, '<---------')
-        results = list(collection.find({
-            "$or": [
-                {"name": query}
-            ]
-        }))
-        print(results, '<<-------')
+
+        if query.isalpha():
+            results = list(collection.find({"$or": [ {"name": query}] }))
+            print(results, '<<-------')
+        
     else:
         print('Something went wrong!', '<---------')
 

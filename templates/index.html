@@ -4,19 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
   </head>
   <body>
     <h1>Welcome to the Pokedex</h1>
 
     <p>Search for your favorite Pokemon by name</p>
-    <p>Note: This pokedex only covers the first 151 Pokemon</p>
+    <p>
+      Note: This pokedex only covers the first 9 Pokemon, Pikachu, and Raichu
+    </p>
+    <p>This pokedex will include more Pokemon in the future.</p>
 
     <form action="/search" method="get">
       <input
+        class="search-bar"
         type="text"
         name="pokemon_name"
-        placeholder="Enter Pokémon Name"
+        placeholder="Enter Pokémon Name (e.g., Pikachu)"
         value="{{ request.args.get('pokemon_name', '')}}"
+        pattern="[A-Za-z]+"
+        title="Please enter letters only"
         required
       />
       <button type="submit">Search</button>

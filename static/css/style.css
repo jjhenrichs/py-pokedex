@@ -1,3 +1,11 @@
 * {
   text-align: center;
 }
+
+body {
+  border: 1px solid black;
+}
+
+.search-bar {
+  text-align: left;
+}
