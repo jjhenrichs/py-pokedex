@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <h1>Welcome to the Pokedex</h1>
+
+    <p>Search for your favorite Pokemon by name</p>
+    <p>Note: This pokedex only covers the first 151 Pokemon</p>
+
+    <form action="/search" method="get">
+      <input
+        type="text"
+        name="pokemon_name"
+        placeholder="Enter Pokémon Name"
+        required
+      />
+      <button type="submit">Search</button>
+    </form>
+  </body>
+</html>
