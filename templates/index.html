@@ -29,7 +29,10 @@
         title="Please enter letters only"
         required
       />
-      <button type="submit">Search</button>
+      <div class="buttons">
+        <button type="submit" class="button">Search</button>
+        <a href="{{ url_for('home') }}" class="button">Clear</a>
+      </div>
     </form>
 
     <hr />

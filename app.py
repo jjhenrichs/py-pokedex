@@ -12,6 +12,7 @@ def home():
     return render_template('index.html')
 
 
+
 @app.route('/search', methods=['GET'])
 def submit():
     query = request.args.get('pokemon_name', '').strip().lower().capitalize()
