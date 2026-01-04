@@ -16,9 +16,36 @@
         type="text"
         name="pokemon_name"
         placeholder="Enter Pokémon Name"
+        value="{{ request.args.get('pokemon_name', '')}}"
         required
       />
       <button type="submit">Search</button>
     </form>
+
+    <hr />
+
+    {% if results %}
+    <ul>
+      {% for pokemon in results %}
+      <li>
+        <strong>{{ pokemon.name }}</strong>
+        <h3>{{ pokemon.nickname }}</h3>
+        <img src="{{ pokemon.image_url }}" alt="{{ pokemon.name }}" />
+
+        {% if pokemon.evolves_from %}
+        <p>Evolves from: {{ pokemon.evolves_from }}</p>
+        {% endif %} {% if pokemon.evolves_to %}
+        <p>Evolves to: {{ pokemon.evolves_to }}</p>
+        {% endif %}
+
+        <p>Type: {{ pokemon.type }}</p>
+        <p>{{ pokemon.description }}</p>
+      </li>
+
+      {% endfor %}
+    </ul>
+    {% elif request.args.get('q') %}
+    <p>No results found</p>
+    {% endif %}
   </body>
 </html>
