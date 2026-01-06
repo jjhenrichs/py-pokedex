@@ -12,7 +12,7 @@ body {
   padding: 10px;
 }
 
-.search-bar {
+#search-bar {
   text-align: left;
   width: 225px;
 }
