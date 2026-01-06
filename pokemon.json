@@ -84,6 +84,144 @@
     "description": "A brutal Pokémon with pressurized water jets on its shell. They are used for high speed tackles."
   },
   {
+    "_id": 10,
+    "name": "Caterpie",
+    "nickname": "Worm Pokémon",
+    "type": ["Bug"],
+    "image": "{{ url_for('static', filename='images/caterpie.png') }}",
+    "evolves_to": "Metapod",
+    "description": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls."
+  },
+  {
+    "_id": 11,
+    "name": "Metapod",
+    "nickname": "Cocoon Pokémon",
+    "type": ["Bug"],
+    "image": "{{ url_for('static', filename='images/metapod.png') }}",
+    "evolves_to": "Butterfree",
+    "evolves_from": "Caterpie",
+    "description": "This Pokémon is vulnerable to attack while its shell is soft, exposing its weak and tender body."
+  },
+  {
+    "_id": 12,
+    "name": "Butterfree",
+    "nickname": "Butterfly Pokémon",
+    "type": ["Bug", "Flying"],
+    "image": "{{ url_for('static', filename='images/butterfree.png') }}",
+    "evolves_from": "Metapod",
+    "description": "In battle, it flaps its wings at great speed to release highly toxic dust into the air."
+  },
+  {
+    "_id": 13,
+    "name": "Weedle",
+    "nickname": "Hairy Bug Pokémon",
+    "type": ["Bug", "Poison"],
+    "image": "{{ url_for('static', filename='images/weedle.png') }}",
+    "evolves_to": "Kakuna",
+    "description": "Often found in forests, eating leaves. It has a sharp stinger on its head that secretes a painful toxin."
+  },
+  {
+    "_id": 14,
+    "name": "Kakuna",
+    "nickname": "Cocoon Pokémon",
+    "type": ["Bug", "Poison"],
+    "image": "{{ url_for('static', filename='images/kakuna.png') }}",
+    "evolves_to": "Beedrill",
+    "evolves_from": "Weedle",
+    "description": "Almost incapable of moving, this Pokémon can only harden its shell to protect itself from predators."
+  },
+  {
+    "_id": 15,
+    "name": "Beedrill",
+    "nickname": "Poison Bee Pokémon",
+    "type": ["Bug", "Poison"],
+    "image": "{{ url_for('static', filename='images/beedrill.png') }}",
+    "evolves_from": "Kakuna",
+    "description": "Flies at high speed and attacks using its large venomous stingers on its forelegs and tail."
+  },
+  {
+    "_id": 16,
+    "name": "Pidgey",
+    "nickname": "Tiny Bird Pokémon",
+    "type": ["Normal", "Flying"],
+    "image": "{{ url_for('static', filename='images/pidgey.png') }}",
+    "evolves_to": "Pidgeotto",
+    "description": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand."
+  },
+  {
+    "_id": 17,
+    "name": "Pidgeotto",
+    "nickname": "Bird Pokémon",
+    "type": ["Normal", "Flying"],
+    "image": "{{ url_for('static', filename='images/pidgeotto.png') }}",
+    "evolves_to": "Pidgeot",
+    "evolves_from": "Pidgey",
+    "description": "Very protective of its sprawling territorial area, this Pokémon will fiercely peck at any intruder."
+  },
+  {
+    "_id": 18,
+    "name": "Pidgeot",
+    "nickname": "Bird Pokémon",
+    "type": ["Normal", "Flying"],
+    "image": "{{ url_for('static', filename='images/pidgeot.png') }}",
+    "evolves_from": "Pidgeotto",
+    "description": "When hunting, it skims the surface of water at high speed tp pick off unwary prey such as Magikarp."
+  },
+  {
+    "_id": 19,
+    "name": "Rattata",
+    "nickname": "Mouse Pokémon",
+    "type": ["Normal"],
+    "image": "{{ url_for('static', filename='images/rattata.png') }}",
+    "evolves_to": "Raticate",
+    "description": "Bites anything when it attacks. Small and very quick, it is a common sight in many places."
+  },
+  {
+    "_id": 20,
+    "name": "Raticate",
+    "nickname": "Mouse Pokémon",
+    "type": ["Normal"],
+    "image": "{{ url_for('static', filename='images/raticate.png') }}",
+    "evolves_from": "Rattata",
+    "description": "Its hind feet are webbed, enabling it to swim in rivers and hunt for prey."
+  },
+  {
+    "_id": 21,
+    "name": "Spearow",
+    "nickname": "Tiny Bird Pokémon",
+    "type": ["Normal", "Flying"],
+    "image": "{{ url_for('static', filename='images/spearow.png') }}",
+    "evolves_to": "Fearow",
+    "description": "Easily disturbed, this Pokémon is known to attack in a furious rage."
+  },
+  {
+    "_id": 22,
+    "name": "Fearow",
+    "nickname": "Beak Pokémon",
+    "type": ["Normal", "Flying"],
+    "image": "{{ url_for('static', filename='images/fearow.png') }}",
+    "evolves_from": "Spearow",
+    "description": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest."
+  },
+  {
+    "_id": 23,
+    "name": "Ekans",
+    "nickname": "Snake Pokémon",
+    "type": ["Poison"],
+    "image": "{{ url_for('static', filename='images/ekans.png') }}",
+    "evolves_to": "Arbok",
+    "description": "Moves silently and stealthily. Eats the eggs of birds, such as Pidgey and Spearow, whole."
+  },
+  {
+    "_id": 24,
+    "name": "Arbok",
+    "nickname": "Cobra Pokémon",
+    "type": ["Poison"],
+    "image": "{{ url_for('static', filename='images/arbok.png') }}",
+    "evolves_from": "Ekans",
+    "description": "The pattern on its belly is said to differ from area to area. It is used to intimidate enemies."
+  },
+  {
     "_id": 25,
     "name": "Pikachu",
     "nickname": "Mouse Pokémon",
