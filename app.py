@@ -19,7 +19,8 @@ def submit():
 
     results = []
 
-    if query and query.isalpha():
+    if query and (query.isalpha() \
+        or query.endswith('♂') or query.endswith('♀')):
         results = list(collection.find({"name": query}))
 
     return render_template('index.html', results=results)

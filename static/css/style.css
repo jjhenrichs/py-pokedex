@@ -21,8 +21,9 @@ body {
 img {
   background-color: #fff;
   border-radius: 50px;
-  width: 300px;
-  height: 300px;
+  width: 275px;
+  height: 275px;
+  padding: 25px;
 }
 
 .buttons {

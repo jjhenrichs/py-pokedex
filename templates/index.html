@@ -14,7 +14,7 @@
 
     <p>Search for your favorite Pokemon by name</p>
     <p>Note: This pokedex only covers the first 49 Pokemon</p>
-    <p>Type ALT + 9794 for male ♂, type ALT + 9792 for female ♀</p>
+    <p>For the Nidorans include male ♂ or female ♀</p>
     <p>This pokedex will include more Pokemon in the future.</p>
 
     <form action="/search" method="get">
@@ -24,7 +24,7 @@
         name="pokemon_name"
         placeholder="Enter Pokémon Name (e.g., Pikachu)"
         value="{{ request.args.get('pokemon_name', '')}}"
-        pattern="[A-Za-z]+"
+        pattern="[A-Za-z]+(♂|♀)?"
         title="Please enter letters only"
         autocomplete="off"
         required
