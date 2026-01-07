@@ -238,5 +238,215 @@
     "image_url": "images/raichu.png",
     "evolves_from": "Pikachu",
     "description": "Its long tail serves as a ground to protect itself from its own high voltage power."
+  },
+  {
+    "_id": 27,
+    "name": "Sandshrew",
+    "nickname": "Mouse Pokémon",
+    "type": ["Ground"],
+    "image_url": "images/sandshrew.png",
+    "evolves_to": "Sandslash",
+    "description": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food."
+  },
+  {
+    "_id": 28,
+    "name": "Sandslash",
+    "nickname": "Mouse Pokémon",
+    "type": ["Ground"],
+    "image_url": "images/sandslash.png",
+    "evolves_from": "Sandshrew",
+    "description": "Curls up into a ball to protect itself from predators. It can roll while curled up to attack."
+  },
+  {
+    "_id": 29,
+    "name": "Nidoran♀",
+    "nickname": "Poison Pin Pokémon",
+    "type": ["Poison"],
+    "image_url": "images/nidoran_female.png",
+    "evolves_to": "Nidorina",
+    "description": "Although small, its venomous barbs render it dangerous. The female has smaller horns."
+  },
+  {
+    "_id": 30,
+    "name": "Nidorina",
+    "nickname": "Poison Pin Pokémon",
+    "type": ["Poison"],
+    "image_url": "images/nidorina.png",
+    "evolves_to": "Nidoqueen",
+    "evolves_from": "Nidoran♀",
+    "description": "The female's horn develops slowly. Prefers physical attacks such as clawing and biting."
+  },
+  {
+    "_id": 31,
+    "name": "Nidoqueen",
+    "nickname": "Drill Pokémon",
+    "type": ["Poison", "Ground"],
+    "image_url": "images/nidoqueen.png",
+    "evolves_from": "Nidorina",
+    "description": "Its body is covered with hard scales. It uses its hefty bulk to execute powerful moves."
+  },
+  {
+    "_id": 32,
+    "name": "Nidoran♂",
+    "nickname": "Poison Pin Pokémon",
+    "type": ["Poison"],
+    "image_url": "images/nidoran_male.png",
+    "evolves_to": "Nidorino",
+    "description": "Stiffens its ears to sense danger. The larger its horn, the more powerful its secreted venom."
+  },
+  {
+    "_id": 33,
+    "name": "Nidorino",
+    "nickname": "Poison Pin Pokémon",
+    "type": ["Poison"],
+    "image_url": "images/nidorino.png",
+    "evolves_to": "Nidoking",
+    "evolves_from": "Nidoran♂",
+    "description": "An aggressive Pokémon that is quick to attack. The horn on its head secretes a powerful venom."
+  },
+  {
+    "_id": 34,
+    "name": "Nidoking",
+    "nickname": "Drill Pokémon",
+    "type": ["Poison", "Ground"],
+    "image_url": "images/nidoking.png",
+    "evolves_from": "Nidorino",
+    "description": "It uses its powerful tail in battle to smash, constrict, then swing opponents around."
+  },
+  {
+    "_id": 35,
+    "name": "Clefairy",
+    "nickname": "Fairy Pokémon",
+    "type": ["Fairy"],
+    "image_url": "images/clefairy.png",
+    "evolves_to": "Clefable",
+    "description": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas."
+  },
+  {
+    "_id": 36,
+    "name": "Clefable",
+    "nickname": "Fairy Pokémon",
+    "type": ["Fairy"],
+    "image_url": "images/clefable.png",
+    "evolves_from": "Clefairy",
+    "description": "A timid fairy Pokémon that is rarely seen. It will run and hide the moment it senses people."
+  },
+  {
+    "_id": 37,
+    "name": "Vulpix",
+    "nickname": "Fox Pokémon",
+    "type": ["Fire"],
+    "image_url": "images/vulpix.png",
+    "evolves_to": "Ninetales",
+    "description": "At the time of birth, it has just one tail. The tail splits from its tip as it grows older."
+  },
+  {
+    "_id": 38,
+    "name": "Ninetales",
+    "nickname": "Fox Pokémon",
+    "type": ["Fire"],
+    "image_url": "images/ninetales.png",
+    "evolves_from": "Vulpix",
+    "description": "Very intelligent and very vengeful. Grabbing one of its many tails could result in a 1000-year curse."
+  },
+  {
+    "_id": 39,
+    "name": "Jigglypuff",
+    "nickname": "Balloon Pokémon",
+    "type": ["Normal", "Fairy"],
+    "image_url": "images/jigglypuff.png",
+    "evolves_to": "Wigglytuff",
+    "description": "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep."
+  },
+  {
+    "_id": 40,
+    "name": "Wigglytuff",
+    "nickname": "Balloon Pokémon",
+    "type": ["Normal", "Fairy"],
+    "image_url": "images/wigglytuff.png",
+    "evolves_from": "Jigglypuff",
+    "description": "Uses its elastic body to bounce around. It can freely adjust the hardness of its body."
+  },
+  {
+    "_id": 41,
+    "name": "Zubat",
+    "nickname": "Bat Pokémon",
+    "type": ["Poison", "Flying"],
+    "image_url": "images/zubat.png",
+    "evolves_to": "Golbat",
+    "description": "Forms colonies in dark places such as caves and abandoned buildings. Uses ultrasonic waves to identify and approach targets."
+  },
+  {
+    "_id": 42,
+    "name": "Golbat",
+    "nickname": "Bat Pokémon",
+    "type": ["Poison", "Flying"],
+    "image_url": "images/golbat.png",
+    "evolves_from": "Zubat",
+    "description": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly."
+  },
+  {
+    "_id": 43,
+    "name": "Oddish",
+    "nickname": "Weed Pokémon",
+    "type": ["Grass", "Poison"],
+    "image_url": "images/oddish.png",
+    "evolves_to": "Gloom",
+    "description": "During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds."
+  },
+  {
+    "_id": 44,
+    "name": "Gloom",
+    "nickname": "Weed Pokémon",
+    "type": ["Grass", "Poison"],
+    "image_url": "images/gloom.png",
+    "evolves_to": "Vileplume",
+    "evolves_from": "Oddish",
+    "description": "The stench it emits from the pistil on its head may cause fainting. It roams the countryside with its face downcast."
+  },
+  {
+    "_id": 45,
+    "name": "Vileplume",
+    "nickname": "Flower Pokémon",
+    "type": ["Grass", "Poison"],
+    "image_url": "images/vileplume.png",
+    "evolves_from": "Gloom",
+    "description": "The larger its petals, the more toxic pollen it contains. Its big petals are used to attract prey."
+  },
+  {
+    "_id": 46,
+    "name": "Paras",
+    "nickname": "Mushroom Pokémon",
+    "type": ["Bug", "Grass"],
+    "image_url": "images/paras.png",
+    "evolves_to": "Parasect",
+    "description": "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places."
+  },
+  {
+    "_id": 47,
+    "name": "Parasect",
+    "nickname": "Mushroom Pokémon",
+    "type": ["Bug", "Grass"],
+    "image_url": "images/parasect.png",
+    "evolves_from": "Paras",
+    "description": "The mushroom on its back grows larger by the day. The bug host is barely able to move under the mushroom's weight."
+  },
+  {
+    "_id": 48,
+    "name": "Venonat",
+    "nickname": "Insect Pokémon",
+    "type": ["Bug", "Poison"],
+    "image_url": "images/venonat.png",
+    "evolves_to": "Venomoth",
+    "description": "Its large eyes are actually clusters of tiny eyes. At night, it uses them to see in the dark."
+  },
+  {
+    "_id": 49,
+    "name": "Venomoth",
+    "nickname": "Poison Moth Pokémon",
+    "type": ["Bug", "Poison"],
+    "image_url": "images/venomoth.png",
+    "evolves_from": "Venonat",
+    "description": "The dust-like scales covering its wings are color-coded to indicate the kinds of poison it has."
   }
 ]
