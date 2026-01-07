@@ -13,9 +13,7 @@
     <h1>Welcome to the Pokedex</h1>
 
     <p>Search for your favorite Pokemon by name</p>
-    <p>
-      Note: This pokedex only covers the first 9 Pokemon, Pikachu, and Raichu
-    </p>
+    <p>Note: This pokedex only covers the first 26 Pokemon</p>
     <p>This pokedex will include more Pokemon in the future.</p>
 
     <form action="/search" method="get">
@@ -36,8 +34,6 @@
       </div>
     </form>
 
-    <hr />
-
     {% if results %}
     <ul>
       {% for pokemon in results %}
@@ -55,7 +51,7 @@
         <p>Evolves to: {{ pokemon.evolves_to }}</p>
 
         {% endif %} {% if pokemon.type|length > 1 %}
-        <p>Type: {{ pokemon.type[0] }}, {{ pokemon.type[1] }}</p>
+        <p>Types: {{ pokemon.type[0] }}, {{ pokemon.type[1] }}</p>
         {% else %}
         <p>Type: {{ pokemon.type[0] }}</p>
         {% endif %}
@@ -63,10 +59,12 @@
         <p>{{ pokemon.description }}</p>
       </li>
 
-      {% endfor %}
+      {% endfor %} {% elif request.args.get('pokemon_name') %}
+      <li class="poke-info">
+        <p>No results found. Check your spelling.</p>
+      </li>
     </ul>
-    {% elif request.args.get('pokemon_name') %}
-    <p>No results found. Check your spelling.</p>
+
     {% endif %}
   </body>
 </html>
