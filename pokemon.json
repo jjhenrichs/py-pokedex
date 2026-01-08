@@ -756,8 +756,7 @@
     "name": "Farfetch'd",
     "nickname": "Wild Duck Pokémon",
     "type": ["Normal", "Flying"],
-    "image_url": "images/farfetchd.png",
-    "evolves_from": "Ducklett",
+    "image_url": "images/farfetch'd.png",
     "description": "The sprig of green onions it holds is its weapon. It is used much like a metal sword."
   },
   {

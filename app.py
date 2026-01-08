@@ -19,8 +19,7 @@ def submit():
 
     results = []
 
-    if query and (query.isalpha() \
-        or query.endswith('♂') or query.endswith('♀')):
+    if query and re.fullmatch(r"^[A-Za-z]+(?:\.(?:\s[A-Za-z]+)|[ '-][A-Za-z]+)*(?:[♂♀])?$", query):
         results = list(collection.find({"name": query}))
 
     return render_template('index.html', results=results)

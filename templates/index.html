@@ -24,8 +24,7 @@
         name="pokemon_name"
         placeholder="Enter Pokémon Name (e.g., Pikachu)"
         value="{{ request.args.get('pokemon_name', '')}}"
-        pattern="[A-Za-z]+(♂|♀)?"
-        title="Please enter letters only"
+        pattern="^[A-Za-z]+(?:\.(?:\s[A-Za-z]+)|[ '-][A-Za-z]+)*(?:[♂♀])?$"
         autocomplete="off"
         required
       />
