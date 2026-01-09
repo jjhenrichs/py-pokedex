@@ -46,9 +46,19 @@
         />
 
         {% if pokemon.evolves_from %}
-        <p>Evolves from: {{ pokemon.evolves_from }}</p>
+        <p>
+          Evolves from:
+          <a href="/search?pokemon_name={{ pokemon.evolves_from }}"
+            >{{ pokemon.evolves_from }}</a
+          >
+        </p>
         {% endif %} {% if pokemon.evolves_to %}
-        <p>Evolves to: {{ pokemon.evolves_to }}</p>
+        <p>
+          Evolves to:
+          <a href="/search?pokemon_name={{ pokemon.evolves_to}}"
+            >{{ pokemon.evolves_to }}</a
+          >
+        </p>
 
         {% endif %} {% if pokemon.type|length > 1 %}
         <p>Types: {{ pokemon.type[0] }}, {{ pokemon.type[1] }}</p>
