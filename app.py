@@ -8,10 +8,18 @@ client = MongoClient('mongodb://localhost:27017/')
 db = client['pokedex']
 collection = db['pokemon']
 
-
 @app.route('/')
 def home():    
-    return render_template('index.html')
+    pokemon_names = [
+        "Bulbasaur",
+        "Ivysaur",
+        "Venusaur",
+        "Charmander",
+        "Charmeleon",
+        "Charizard",
+        "Pikachu"
+    ]
+    return render_template('index.html', pokemon_names=pokemon_names)
 
 @app.route('/search', methods=['GET'])
 def submit():
