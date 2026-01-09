@@ -13,13 +13,15 @@
       defer
     ></script>
   </head>
-  <body>
+  <body id="bg-image">
     <h1>Welcome to the Pokedex</h1>
 
-    <p>Search for your favorite Pokemon by name</p>
-    <p>Note: This pokedex only covers the first 101 Pokemon</p>
-    <p>For the Nidorans, include male ♂ or female ♀</p>
-    <p>This pokedex will include more Pokemon in the future.</p>
+    <div class="notes">
+      <p>Search for your favorite Pokemon by name</p>
+      <p>Note: This pokedex only covers the first 121 Pokemon</p>
+      <p>For the Nidorans, include male ♂ or female ♀</p>
+      <p>This pokedex will include more Pokemon in the future.</p>
+    </div>
 
     <form action="/search" method="get">
       <input
@@ -32,6 +34,13 @@
         autocomplete="off"
         required
       />
+      <div id="autocomplete-container">
+        <ul id="autocomplete-list">
+          <!-- <li class="autocomplete-item">Item 1</li>
+          <li class="autocomplete-item">Item 2</li>
+          <li class="autocomplete-item">Item 3</li> -->
+        </ul>
+      </div>
       <div class="buttons">
         <button type="submit" class="button">Search</button>
         <a href="{{ url_for('home') }}" class="button">Clear</a>

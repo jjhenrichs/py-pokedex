@@ -1,17 +1,17 @@
 * {
-  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-html,
-body {
-  height: 100%;
+  text-align: center;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
   background-image: url("/static/images/pokeballs_bg_v2.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -20,10 +20,10 @@ body {
 
 h1 {
   padding: 15px;
-  padding-top: 60px;
+  padding-top: 47px;
 }
 
-p {
+.notes p {
   padding: 5px;
 }
 
@@ -41,9 +41,10 @@ img {
 
 #search-bar {
   text-align: left;
-  width: 225px;
+  width: 300px;
   margin: 25px;
   margin-bottom: 10px;
+  padding: 3px;
 }
 
 .button {
@@ -70,9 +71,31 @@ img {
 }
 
 .poke-info p {
-  padding: 10px;
+  padding: 3px;
 }
 
 .poke-info img {
   margin: 20px;
+}
+
+#autocomplete-container {
+  position: absolute;
+  width: 300px;
+  margin-top: -10px;
+  margin-left: 25px;
+  opacity: 0.75;
+}
+
+.autocomplete-item {
+  text-align: left;
+  list-style-type: none;
+  padding: 3px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.autocomplete-item:hover {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
 }

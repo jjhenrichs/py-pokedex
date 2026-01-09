@@ -10,16 +10,8 @@ collection = db['pokemon']
 
 @app.route('/')
 def home():    
-    pokemon_names = [
-        "Bulbasaur",
-        "Ivysaur",
-        "Venusaur",
-        "Charmander",
-        "Charmeleon",
-        "Charizard",
-        "Pikachu"
-    ]
-    return render_template('index.html', pokemon_names=pokemon_names)
+    return render_template('index.html')
+
 
 @app.route('/search', methods=['GET'])
 def submit():

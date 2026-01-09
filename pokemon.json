@@ -920,5 +920,179 @@
     "image_url": "images/electrode.png",
     "evolves_from": "Voltorb",
     "description": "It stores electric energy under very high pressure. It often explodes with little or no provocation."
+  },
+  {
+    "_id": 102,
+    "name": "Exeggcute",
+    "nickname": "Egg Pokémon",
+    "type": ["Grass", "Psychic"],
+    "image_url": "images/exeggcute.png",
+    "evolves_to": "Exeggutor",
+    "description": "Often mistaken for eggs. When distrubed, they quickly gather and attack in swarms."
+  },
+  {
+    "_id": 103,
+    "name": "Exeggutor",
+    "nickname": "Coconut Pokémon",
+    "type": ["Grass", "Psychic"],
+    "image_url": "images/exeggutor.png",
+    "evolves_from": "Exeggcute",
+    "description": "Legend has it that on rare ocasions, one of the heads will drop off and continue as an Exeggcute."
+  },
+  {
+    "_id": 104,
+    "name": "Cubone",
+    "nickname": "Lonely Pokémon",
+    "type": ["Ground"],
+    "image_url": "images/cubone.png",
+    "evolves_to": "Marowak",
+    "description": "Because it never removes its skull helmet, no one has ever seen this pokémon's real face."
+  },
+  {
+    "_id": 105,
+    "name": "Marowak",
+    "nickname": "Bone Keeper Pokémon",
+    "type": ["Ground", "Fire"],
+    "image_url": "images/marowak.png",
+    "evolves_from": "Cubone",
+    "description": "The bone it holds is its key weapon. It throws the bone skillfullu like a boomerang to KO targets."
+  },
+  {
+    "_id": 106,
+    "name": "Hitmonlee",
+    "nickname": "Kicking Pokémon",
+    "type": ["Fighting"],
+    "image_url": "images/hitmonlee.png",
+    "description": "When in a hurry, its egs lengthen progressively. It runs smoothly with extra long, loping strides."
+  },
+  {
+    "_id": 107,
+    "name": "Hitmonchan",
+    "nickname": "Punching Pokémon",
+    "type": ["Fighting"],
+    "image_url": "images/hitmonchan.png",
+    "description": "While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see."
+  },
+  {
+    "_id": 108,
+    "name": "Lickitung",
+    "nickname": "Licking Pokémon",
+    "type": ["Normal"],
+    "image_url": "images/lickitung.png",
+    "description": "Its tongue can be extended like a chameleon's/ It leaves a tingling sensation when it licks enemies."
+  },
+  {
+    "_id": 109,
+    "name": "Koffing",
+    "nickname": "Poison Gas Pokémon",
+    "type": ["Poison"],
+    "image_url": "images/koffing.png",
+    "evolves_to": "Weezing",
+    "description": "Because it stores several linds of toxic gases in its body, it is prone to exploding without warning."
+  },
+  {
+    "_id": 110,
+    "name": "Weezing",
+    "nickname": "Poison Gas Pokémon",
+    "type": ["Poison"],
+    "image_url": "images/weezing.png",
+    "evolves_from": "Koffing",
+    "description": "Where two kinds of poison gases meet, 2 Koffings can fuse into a Weezing over many years."
+  },
+  {
+    "_id": 111,
+    "name": "Rhyhorn",
+    "nickname": "Spikes Pokémon",
+    "type": ["Ground", "Rock"],
+    "image_url": "images/rhyhorn.png",
+    "evolves_to": "Rhydon",
+    "description": "Its massive bones are 1,000 times harder than human bones. It can easily knock a trailer flying."
+  },
+  {
+    "_id": 112,
+    "name": "Rhydon",
+    "nickname": "Drill Pokémon",
+    "type": ["Ground", "Rock"],
+    "image_url": "images/rhydon.png",
+    "evolves_from": "Rhyhorn",
+    "description": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees."
+  },
+  {
+    "_id": 113,
+    "name": "Chansey",
+    "nickname": "Egg Pokémon",
+    "type": ["Normal"],
+    "image_url": "images/chansey.png",
+    "description": "A rare and elusive Pokémon that shares its nutritious eggs if it sees an injured Pokémon."
+  },
+  {
+    "_id": 114,
+    "name": "Tangela",
+    "nickname": "Vine Pokémon",
+    "type": ["Grass"],
+    "image_url": "images/tangela.png",
+    "description": "Its whole body is swathed with wide vines that are similar to seaweed. Its vines shake as it walks."
+  },
+  {
+    "_id": 115,
+    "name": "Kangaskhan",
+    "nickname": "Parent Pokémon",
+    "type": ["Normal"],
+    "image_url": "images/kangaskhan.png",
+    "description": "The infant rarely ventures out of its mother's protective pouch until it is 3 years old"
+  },
+  {
+    "_id": 116,
+    "name": "Horsea",
+    "nickname": "Dragon Pokémon",
+    "type": ["Water"],
+    "image_url": "images/horsea.png",
+    "evolves_to": "Seadra",
+    "description": "Known to shoot down flying bugs with precision blasts of ink from the surface of the water."
+  },
+  {
+    "_id": 117,
+    "name": "Seadra",
+    "nickname": "Dragon Pokémon",
+    "type": ["Water"],
+    "image_url": "images/seadra.png",
+    "evolves_from": "Horsea",
+    "description": "Capable of swimming backwards by rapidly flapping its wing-like pectoral fins and stout tail."
+  },
+  {
+    "_id": 118,
+    "name": "Goldeen",
+    "nickname": "Goldfish Pokémon",
+    "type": ["Water"],
+    "image_url": "images/goldeen.png",
+    "evolves_to": "Seaking",
+    "description": "Its tail fin billows like an elegant ballroom dress, giving it the nickname of the Water Queen."
+  },
+  {
+    "_id": 119,
+    "name": "Seaking",
+    "nickname": "Goldfish Pokémon",
+    "type": ["Water"],
+    "image_url": "images/seaking.png",
+    "evolves_from": "Goldeen",
+    "description": "In the autumn spawning season, they can be seen swimming powerfully up rivers and creeks."
+  },
+  {
+    "_id": 120,
+    "name": "Staryu",
+    "nickname": "Star Shape Pokémon",
+    "type": ["Water"],
+    "image_url": "images/staryu.png",
+    "evolves_to": "Starmie",
+    "description": "An enigmatic Pokémon that can effortlessly regenerate any appendange it loses in battle."
+  },
+  {
+    "_id": 121,
+    "name": "Starmie",
+    "nickname": "Mysterious Pokémon",
+    "type": ["Water", "Psychic"],
+    "image_url": "images/starmie.png",
+    "evolves_from": "Staryu",
+    "description": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem."
   }
 ]
