@@ -12,6 +12,16 @@ collection = db['pokemon']
 def home():    
     return render_template('index.html')
 
+@app.route('/api/pokemon')
+def get_pokemon():
+    query = request.args.get('q', '').strip().capitalize()
+
+    pokemon = list(collection.find({}))
+    names = [monster['name']for monster in pokemon]
+    print('Trying to get pokemon names with query:', query)
+
+    return jsonify(names)
+
 @app.route('/search', methods=['GET'])
 def submit():
     query = request.args.get('pokemon_name', '').strip().lower().capitalize()
