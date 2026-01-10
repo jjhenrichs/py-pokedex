@@ -10,6 +10,12 @@ searchBar.addEventListener("input", async () => {
       const li = document.createElement("li");
       li.className = "autocomplete-item";
       li.textContent = name;
+
+      li.addEventListener("click", () => {
+        searchBar.value = name;
+        ac_list.innerHTML = ""; // hide suggestions after clicking
+      });
+
       ac_list.appendChild(li);
     }
   } catch (err) {
