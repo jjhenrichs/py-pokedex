@@ -3,6 +3,7 @@ const ac_list = document.getElementById("autocomplete-list");
 
 searchBar.addEventListener("input", async () => {
   try {
+    ac_list.innerHTML = ""; // Clear previous suggestions, if any
     const response = await fetch(`/api/pokemon?q=${searchBar.value}`);
     const data = await response.json();
 
