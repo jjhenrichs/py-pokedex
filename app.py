@@ -15,12 +15,12 @@ def home():
 @app.route('/api/pokemon')
 def get_pokemon():
     query = request.args.get('q', '').strip().capitalize()
+    kanto = list(collection.find({}))
+    names = [pokemon['name'] for pokemon in kanto if query in pokemon['name']]
 
-    pokemon = list(collection.find({}))
-    names = [monster['name']for monster in pokemon]
-    print('Trying to get pokemon names with query:', query)
+    print(query, "<---------")
 
-    return jsonify(names)
+    return jsonify(names[:10])
 
 @app.route('/search', methods=['GET'])
 def submit():
