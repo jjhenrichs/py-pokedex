@@ -9,6 +9,11 @@
       href="{{ url_for('static', filename='css/style.css') }}"
     />
     <script
+      src="https://kit.fontawesome.com/3309c74348.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
       src="{{ url_for('static', filename='js/autocomplete.js')}}"
       defer
     ></script>
@@ -18,32 +23,45 @@
 
     <div class="notes">
       <p>Search for your favorite Pokemon by name</p>
-      <p>Note: This pokedex only covers the first 121 Pokemon</p>
+      <p>
+        Note: This pokedex only covers the first 151 Pokemon, including Lugia,
+        Ho-Oh, and Celebi.
+      </p>
       <p>For the Nidorans, include male ♂ or female ♀</p>
-      <p>This pokedex will include more Pokemon in the future.</p>
     </div>
 
     <form action="/search" method="get">
-      <input
-        id="search-bar"
-        type="text"
-        name="pokemon_name"
-        placeholder="Enter Pokémon Name (e.g., Pikachu)"
-        value="{{ request.args.get('pokemon_name', '')}}"
-        pattern="[A-Za-z]+(?:\.(?:\s[A-Za-z]+)|[ '-][A-Za-z]+)*(?:[♂♀])?"
-        autocomplete="off"
-        required
-      />
+      <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          id="search-bar"
+          type="text"
+          name="pokemon_name"
+          placeholder="Enter Pokémon Name (e.g., Pikachu)"
+          value="{{ request.args.get('pokemon_name', '')}}"
+          pattern="[A-Za-z]+(?:\.(?:\s[A-Za-z]+)|[ '-][A-Za-z]+)*(?:[♂♀])?"
+          autocomplete="off"
+          required
+        />
+        <span
+          ><button class="speak">
+            <i
+              class="fa-solid fa-microphone"
+              title="Say a Pokémon name"
+            ></i></button
+        ></span>
+      </div>
+
       <div id="autocomplete-container">
-        <ul id="autocomplete-list">
-          <!-- <li class="autocomplete-item">Item 1</li>
-          <li class="autocomplete-item">Item 2</li>
-          <li class="autocomplete-item">Item 3</li> -->
-        </ul>
+        <ul id="autocomplete-list"></ul>
       </div>
       <div class="buttons">
-        <button type="submit" class="button">Search</button>
-        <a href="{{ url_for('home') }}" class="button">Clear</a>
+        <button type="submit" class="button" title="Get pokémon info">
+          Search
+        </button>
+        <a href="{{ url_for('home') }}" class="button" title="Clear search bar"
+          >Clear</a
+        >
       </div>
     </form>
 

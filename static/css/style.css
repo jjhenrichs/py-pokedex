@@ -39,12 +39,59 @@ img {
   padding: 10px;
 }
 
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 450px;
+}
+
 #search-bar {
   text-align: left;
-  width: 300px;
-  margin: 25px;
-  margin-bottom: 10px;
-  padding: 3px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid gray;
+  margin: 25px 0 10px;
+  padding: 10px;
+  cursor: text;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-left: none;
+  border-right: none;
+  z-index: 1;
+}
+
+#search-bar:focus {
+  outline: none;
+}
+
+i {
+  border: 1px solid gray;
+  border-radius: 30px;
+  height: 30px;
+  width: 60px;
+  padding: 5px;
+  margin-top: 15px;
+  background-color: white;
+}
+
+.fa-magnifying-glass {
+  border-right: none;
+  position: relative;
+  text-align: left;
+  padding-left: 15px;
+  left: 15px;
+}
+
+.fa-microphone {
+  border-left: none;
+  position: relative;
+  text-align: right;
+  padding-right: 15px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .button {
@@ -57,6 +104,11 @@ img {
   border-radius: 3px;
   padding: 3px 10px;
   font-size: 14px;
+}
+
+.speak {
+  border: none;
+  background-color: transparent;
 }
 
 .poke-info {
@@ -80,9 +132,9 @@ img {
 
 #autocomplete-container {
   position: absolute;
-  width: 300px;
+  width: 350px;
   margin-top: -10px;
-  margin-left: 25px;
+  margin-left: 50px;
   opacity: 0.75;
 }
 
