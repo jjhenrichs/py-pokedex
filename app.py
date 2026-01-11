@@ -15,16 +15,23 @@ def home():
 @app.route('/api/pokemon')
 def get_pokemon():
     query = request.args.get('q', '').strip().capitalize()
+
     kanto = list(collection.find({}))
     names = [pokemon['name'] for pokemon in kanto if query in pokemon['name']]
-
-    print(query, "<---------")
 
     return jsonify(names[:10])
 
 @app.route('/search', methods=['GET'])
 def submit():
-    query = request.args.get('pokemon_name', '').strip().lower().capitalize()
+    query = request.args.get('pokemon_name', '').strip().capitalize()
+
+    if "-" in query:
+        
+        # Capitalize the character after the dash
+        if query[-1] != "-":
+            dash_index = query.index("-")
+            upper_case = query[dash_index + 1].upper()
+            query = query[:dash_index + 1] + upper_case + query[dash_index + 2:]
 
     results = []
 
