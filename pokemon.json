@@ -1184,5 +1184,85 @@
     "type": ["Normal"],
     "image_url": "images/ditto.png",
     "description": "Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy."
+  },
+  {
+    "_id": 133,
+    "name": "Eevee",
+    "nickname": "Evolution Pokémon",
+    "type": ["Normal"],
+    "image_url": "images/eevee.png",
+    "evolves_to": ["Vaporeon", "Jolteon", "Flareon"],
+    "description": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element stones."
+  },
+  {
+    "_id": 134,
+    "name": "Vaporeon",
+    "nickname": "Bubble Jet Pokémon",
+    "type": ["Water"],
+    "image_url": "images/vaporeon.png",
+    "evolves_from": "Eevee",
+    "description": "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's."
+  },
+  {
+    "_id": 135,
+    "name": "Jolteon",
+    "nickname": "Lightning Pokémon",
+    "type": ["Electric"],
+    "image_url": "images/jolteon.png",
+    "evolves_from": "Eevee",
+    "description": "It accumulates negative ions in the atmosphere to blast out 10000-volt lightning bolts."
+  },
+  {
+    "_id": 136,
+    "name": "Flareon",
+    "nickname": "Flame Pokémon",
+    "type": ["Fire"],
+    "image_url": "images/flareon.png",
+    "evolves_from": "Eevee",
+    "description": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees."
+  },
+  {
+    "_id": 137,
+    "name": "Porygon",
+    "nickname": "Virtual Pokémon",
+    "type": ["Normal"],
+    "image_url": "images/porygon.png",
+    "description": "A Pokémon that consists entirely of programming code. Capable of moving freely in cyberspace."
+  },
+  {
+    "_id": 138,
+    "name": "Omanyte",
+    "nickname": "Spiral Pokémon",
+    "type": ["Rock", "Water"],
+    "image_url": "images/omanyte.png",
+    "evolves_to": "Omastar",
+    "description": "Although long entinct, in rare cases, it can be genetically resurrected from fossils."
+  },
+  {
+    "_id": 139,
+    "name": "Omastar",
+    "nickname": "Spiral Pokémon",
+    "type": ["Rock", "Water"],
+    "image_url": "images/omastar.png",
+    "evolves_from": "Omanyte",
+    "description": "A prehistoric Pokémon that died out when its heavy shell made it impossible to catch prey."
+  },
+  {
+    "_id": 140,
+    "name": "Kabuto",
+    "nickname": "Shellfish Pokémon",
+    "type": ["Rock", "Water"],
+    "image_url": "images/kabuto.png",
+    "evolves_to": "Kabutops",
+    "description": "A Pokémon that was resurrected from a fossil found in what was once the ocean floor eons ago."
+  },
+  {
+    "_id": 141,
+    "name": "Kabutops",
+    "nickname": "Shellfish Pokémon",
+    "type": ["Rock", "Water"],
+    "image_url": "images/kabutops.png",
+    "evolves_from": "Kabuto",
+    "description": "Its sleek shape is perfect for swimming. It slashes prey with its c;aws and drains the body fluids."
   }
 ]
