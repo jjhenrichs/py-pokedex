@@ -99,3 +99,7 @@ img {
   color: white;
   cursor: pointer;
 }
+
+.autocomplete-item.active {
+  background-color: #808080;
+}

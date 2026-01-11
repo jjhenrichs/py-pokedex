@@ -1094,5 +1094,95 @@
     "image_url": "images/starmie.png",
     "evolves_from": "Staryu",
     "description": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem."
+  },
+  {
+    "_id": 122,
+    "name": "Mr. Mime",
+    "nickname": "Barrier Pokémon",
+    "type": ["Psychic", "Fairy"],
+    "image_url": "images/mr.mime.png",
+    "description": "If interrupted while it is miming, it will slap around the offender with its broad hands."
+  },
+  {
+    "_id": 123,
+    "name": "Scyther",
+    "nickname": "Mantis Pokémon",
+    "type": ["Bug", "Flying"],
+    "image_url": "images/scyther.png",
+    "description": "With ninja-like agility and speed, it can create the illusion that there is more than one."
+  },
+  {
+    "_id": 124,
+    "name": "Jynx",
+    "nickname": "Human Shape Pokémon",
+    "type": ["Ice", "Psychic"],
+    "image_url": "images/jynx.png",
+    "description": "It seductively wiggles its hips as it walks. It can cause people to dance in unison with it."
+  },
+  {
+    "_id": 125,
+    "name": "Electabuzz",
+    "nickname": "Electric Pokémon",
+    "type": ["Electric"],
+    "image_url": "images/electabuzz.png",
+    "description": "Normally found near power plants, it can wander away and cause major blackouts in cities."
+  },
+  {
+    "_id": 126,
+    "name": "Magmar",
+    "nickname": "Spitfire Pokémon",
+    "type": ["Fire"],
+    "image_url": "images/magmar.png",
+    "description": "Its body always burns with an orange glow that enables it to hide perfectly among flames."
+  },
+  {
+    "_id": 127,
+    "name": "Pinsir",
+    "nickname": "Stag Beetle Pokémon",
+    "type": ["Bug"],
+    "image_url": "images/pinsir.png",
+    "description": "If it fails to crush the foe in its pincers, it will swing it around and toss it hard."
+  },
+  {
+    "_id": 128,
+    "name": "Tauros",
+    "nickname": "Wild Bull Pokémon",
+    "type": ["Normal"],
+    "image_url": "images/tauros.png",
+    "description": "When it targets an enemy, it charges furiously while whipping its body with its long tails."
+  },
+  {
+    "_id": 129,
+    "name": "Magikarp",
+    "nickname": "Fish Pokémon",
+    "type": ["Water"],
+    "image_url": "images/magikarp.png",
+    "evolves_to": "Gyarados",
+    "description": "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today."
+  },
+  {
+    "_id": 130,
+    "name": "Gyarados",
+    "nickname": "Atrocious Pokémon",
+    "type": ["Water", "Flying"],
+    "image_url": "images/gyarados.png",
+    "evolves_from": "Magikarp",
+    "description": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage."
+  },
+  {
+    "_id": 131,
+    "name": "Lapras",
+    "nickname": "Transport Pokémon",
+    "type": ["Water", "Ice"],
+    "image_url": "images/lapras.png",
+    "description": "A Pokémon that has been overhunted almost to extinction. It can ferry people across the water."
+  },
+  {
+    "_id": 132,
+    "name": "Ditto",
+    "nickname": "Transform Pokémon",
+    "type": ["Normal"],
+    "image_url": "images/ditto.png",
+    "description": "Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy."
   }
 ]
