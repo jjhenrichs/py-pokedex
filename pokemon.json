@@ -1264,5 +1264,113 @@
     "image_url": "images/kabutops.png",
     "evolves_from": "Kabuto",
     "description": "Its sleek shape is perfect for swimming. It slashes prey with its c;aws and drains the body fluids."
+  },
+  {
+    "_id": 142,
+    "name": "Aerodactyl",
+    "nickname": "Fossil Pokémon",
+    "type": ["Rock", "Flying"],
+    "image_url": "images/aerodactyl.png",
+    "description": "A ferocious, prehistoric Pokémon that goes for the enemy's throat with its serrated saw-like fangs."
+  },
+  {
+    "_id": 143,
+    "name": "Snorlax",
+    "nickname": "Sleeping Pokémon",
+    "type": ["Normal"],
+    "image_url": "images/snorlax.png",
+    "description": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful."
+  },
+  {
+    "_id": 144,
+    "name": "Articuno",
+    "nickname": "Freeze / Cruel Pokémon",
+    "type": ["Ice", "Flying"],
+    "image_url": "images/articuno.png",
+    "description": "A legendary bird Pokémon said to appear to doomed travelers who are lost in icy mountains."
+  },
+  {
+    "_id": 145,
+    "name": "Zapdos",
+    "nickname": "Electric / Strong Legs Pokémon",
+    "type": ["Electric", "Flying"],
+    "image_url": "images/zapdos.png",
+    "description": "A legendary bird Pokémon that is said to appear from clouds while dropping enormous lightning bolts."
+  },
+  {
+    "_id": 146,
+    "name": "Moltres",
+    "nickname": "Flame / Malevolent Pokémon",
+    "type": ["Fire", "Flying"],
+    "image_url": "images/moltres.png",
+    "description": "Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames."
+  },
+  {
+    "_id": 147,
+    "name": "Dratini",
+    "nickname": "Dragon Pokémon",
+    "type": ["Dragon"],
+    "image_url": "images/dratini.png",
+    "evolves_to": "Dragonair",
+    "description": "Long considered a mythical Pokémon until recently when a small colony was found living underwater."
+  },
+  {
+    "_id": 148,
+    "name": "Dragonair",
+    "nickname": "Dragon Pokémon",
+    "type": ["Dragon"],
+    "image_url": "images/dragonair.png",
+    "evolves_from": "Dratini",
+    "evolves_to": "Dragonite",
+    "description": "A mystical Pokémon that exudes a gentle aura. Has the ability to change climate conditions."
+  },
+  {
+    "_id": 149,
+    "name": "Dragonite",
+    "nickname": "Dragon Pokémon",
+    "type": ["Dragon", "Flying"],
+    "image_url": "images/dragonite.png",
+    "evolves_from": "Dragonair",
+    "description": "An extremly rarely seen marine Pokémon. Its intelligence is said to match that of humans."
+  },
+  {
+    "_id": 150,
+    "name": "Mewtwo",
+    "nickname": "Genetic Pokémon",
+    "type": ["Psychic"],
+    "image_url": "images/mewtwo.png",
+    "description": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments."
+  },
+  {
+    "_id": 151,
+    "name": "Mew",
+    "nickname": "New Species Pokémon",
+    "type": ["Psychic"],
+    "image_url": "images/mew.png",
+    "description": "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide."
+  },
+  {
+    "_id": 249,
+    "name": "Lugia",
+    "nickname": "Diving Pokémon",
+    "type": ["Psychic", "Flying"],
+    "image_url": "images/lugia.png",
+    "description": "It is said that it quietly spends its time deep at the bottom of the sea because its powers are too strong."
+  },
+  {
+    "_id": 250,
+    "name": "Ho-Oh",
+    "nickname": "Rainbow Pokémon",
+    "type": ["Fire", "Flying"],
+    "image_url": "images/ho-oh.png",
+    "description": "Legends claim this Pokémon flies the world's skies continuously on its magnificent rainbow-colored wings."
+  },
+  {
+    "_id": 251,
+    "name": "Celebi",
+    "nickname": "Time Travel Pokémon",
+    "type": ["Psychic", "Grass"],
+    "image_url": "images/celebi.png",
+    "description": "This Pokémon wanders across time. Grass and trees flourish in the forests in which it has appeared."
   }
 ]
