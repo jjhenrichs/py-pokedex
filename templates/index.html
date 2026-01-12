@@ -17,6 +17,10 @@
       src="{{ url_for('static', filename='js/autocomplete.js')}}"
       defer
     ></script>
+    <script
+      src="{{ url_for('static', filename='js/speech2text.js')}}"
+      defer
+    ></script>
   </head>
   <body id="bg-image">
     <h1>Welcome to the Pokedex</h1>
@@ -43,12 +47,11 @@
           autocomplete="off"
           required
         />
-        <span
-          ><button class="speak">
-            <i
-              class="fa-solid fa-microphone"
-              title="Say a Pokémon name"
-            ></i></button
+        <span>
+          <i
+            class="fa-solid fa-microphone speaker"
+            title="Say a Pokémon name"
+          ></i
         ></span>
       </div>
 
