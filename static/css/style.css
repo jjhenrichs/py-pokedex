@@ -94,6 +94,10 @@ i {
   font-size: 16px;
 }
 
+.fa-microphone.active {
+  color: red;
+}
+
 .button {
   text-align: right;
   margin: 0 10px;
@@ -104,11 +108,6 @@ i {
   border-radius: 3px;
   padding: 3px 10px;
   font-size: 14px;
-}
-
-.speak {
-  border: none;
-  background-color: transparent;
 }
 
 .poke-info {
