@@ -1,11 +1,14 @@
 from flask import Flask, render_template, request, jsonify
 from pymongo import MongoClient
+from dotenv import load_dotenv
 import re, os
 
 app = Flask(__name__)
 
-MONGO_URI = os.getenv('MONGO_URI', 'mongodb://localhost:27017/')
-client = MongoClient('MONGO_URI')
+load_dotenv()
+
+MONGO_URI = os.getenv('MONGO_URI')
+client = MongoClient(MONGO_URI)
 db = client['pokedex']
 collection = db['pokemon']
 
@@ -42,5 +45,4 @@ def submit():
     return render_template('index.html', results=results)
 
 if __name__ == '__main__':
-    port = int(os.getenv('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=False)
+    app.run(debug=True)
