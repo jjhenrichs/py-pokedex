@@ -23,17 +23,18 @@ speakBtn.addEventListener("click", () => {
     recognition.start();
     isRunning = true;
   } else {
+    recognition.stop();
     console.log("Idle");
     speakBtn.classList.remove("active");
     input.value = previous_input_value;
-    recognition.stop();
     isRunning = false;
   }
 });
 
 recognition.addEventListener("result", (event) => {
-  const transcript = event.results[0][0].transcript;
-  console.log("Transcript:", transcript);
-  input.value = transcript;
-  // previous_input_value = transcript;
+  let url = new URL(window.location.href);
+  const pokemon_name = event.results[0][0].transcript;
+  url.searchParams.set("pokemon_name", pokemon_name);
+  new_url = "/search" + url.search;
+  window.location.replace(new_url); // Redirect to the search results page
 });
