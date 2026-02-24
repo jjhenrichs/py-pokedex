@@ -17,18 +17,23 @@ if (!recognition) {
 
 speakBtn.addEventListener("click", () => {
   if (!isRunning) {
-    console.log("Listening...");
     speakBtn.classList.toggle("active");
     input.value = "Listening...";
     recognition.start();
     isRunning = true;
   } else {
+    // when user clicks on microphone button while it's already listening.
     recognition.stop();
-    console.log("Idle");
-    speakBtn.classList.remove("active");
     input.value = previous_input_value;
+    speakBtn.classList.toggle("active");
     isRunning = false;
   }
+});
+
+// Stop listening when the user stops speaking
+recognition.addEventListener("speechend", () => {
+  recognition.stop();
+  isRunning = false;
 });
 
 recognition.addEventListener("result", (event) => {
